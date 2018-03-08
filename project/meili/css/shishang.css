@@ -1,0 +1,209 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-27 11:16:44
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-30 23:15:26
+*/
+@import url('base.css');
+body{
+	width: 100%;
+	height: 17.2rem;
+	background: #eeeeee;
+}
+.zhwei{
+	width: 100%;
+	height: 0.9rem;
+}
+
+.head{
+	width: 100%;
+	height: 0.9rem;
+	background: #fff;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	padding: 0 0.35rem 0;
+	border-bottom: 0.01rem solid #cecece;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+
+}
+.logo{
+	display: block;
+	width:0.4rem;
+	height: 0.4rem;
+	background: url('../img/jiantou.png');
+	background-size: 0.4rem 0.4rem;
+
+}
+.htext{
+    margin-left: 2.4rem;
+	height: 0.35rem;
+	font-size: 0.35rem;
+	color: #404040;
+}
+.fenl{
+	width: 100%;
+	height: 1.08rem;
+	background:#fff;
+	border-bottom: 0.1rem solid #ccc;
+}
+.fen-list{
+	width: 100%;
+	height:0.97rem;
+	display: flex;
+	justify-content: space-around;
+    align-items: center
+}
+.fen-list li{
+
+	height: 0.97rem;
+	font-size: 0.23rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.fen-list li:last-child{
+	border-bottom: 0.04rem solid #000;
+}
+.fen-list li a{ 
+    color: #656565;
+
+}
+.fen-list li a:last-child{ 
+	color: #000;
+
+}
+.aks{
+	width: 100%;
+	height: 14.07rem;
+	background:#fff;
+	padding-left: 0.2rem;
+}
+.aks-top{
+	width: 6.92rem;
+	height: 0.62rem;
+	font-size: 0.28rem;
+	display: flex;
+	align-items:flex-end;
+}
+.aks-list{
+	width: 6.92rem;
+	height: 10.52rem;
+}
+.aks-list li{
+    width: 6.92rem;
+    height: 2.69rem;
+    border-bottom: 0.01rem solid #f6f6f6;
+    display: flex;
+    align-items: center;
+}
+.aks-list li a{
+	width: 6.92rem;
+	height: 2rem;
+	display: flex;
+	justify-content: space-between;
+
+}
+.akimg{
+	width: 2rem;
+	height: 2rem;
+}
+.akimg img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.hezi{
+	width: 4.92rem;
+	height: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	padding-left: 0.2rem;
+
+}
+.hezi p{
+	font-size: 0.28rem;
+	color: #090909;
+}
+.jiaqian{
+	width: 2.20rem;
+	height: 0.33rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+}
+.jiaqian .xiao{
+	font-size: 0.31rem;
+	color: #e7779d;
+}
+.jiaqian s{
+	font-size: 0.14rem;
+	color:#646464;
+}
+.da{
+	font-size: 0.23rem;
+	color: #646464;
+}
+.qikaituam{
+	width: 1.79rem;
+	height: 0.6rem;
+	background: #ff6599;
+	border-radius: 0.4rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size:0.27rem;
+	color: #fff;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.jiewei{
+	width: 100%;
+	height: 0.98rem;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	display: flex;
+}
+.jiewei-list{
+	width: 100%;
+	height: 0.98rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.jiewei-list li{
+	width: 0.8rem;
+	height: 0.73rem;
+	background:#fff;
+}
+.jiewei-list li a{
+	display: flex;
+	width:0.43rem;
+	height: 0.41rem;
+	margin-left: 0.08rem;
+	justify-content: center;
+	padding-left: 0.2rem;
+	color: #404040;
+}
+.jiewei-list li a img{
+	display: block;
+	width: 0.43rem;
+	height: 0.41rem;
+}
+.jiewei-list p{
+	display: block;
+	font-size: 0.18rem;
+	text-align: center;
+	color: #606060;
+}

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/chaxun.css">
+    <link rel="stylesheet" href="css/base.css">
+    <title>市内查询</title>
+</head>
+<body>
+<div class="top">
+    <span>市内查询</span>
+    <a href="index.html" class="backfont"><img class="back" src="img/btn_back.png"></a>
+    <a href="" class="home"><span>广州</span>▼</a>
+</div>
+<div class="content">
+    <div class="con">
+        <ul class="title">
+            <li class="active">换乘查询</li>
+            <li>线路查询</li>
+            <li>站点查询</li>
+        </ul>
+        <ul class="contain">
+            <li class="active1">
+                <table style="width: 100%;height: 85px;margin: 0;padding: 0;" border="0" cellspacing="0" cellpadding="0" id="mPlacestb">
+                    <tbody><tr>
+                        <td style="border: 1px solid #31A9E8;border-right: none;background: white; ">
+                            <div style="width: 100%;height: 41px;border-bottom: 1px solid #31A9E8;" id="vstart">
+                                <table style="width: 100%;100%;" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody><tr>
+                                        <td style="padding-left: 5px;">
+                                            <input style="width: 100%;height: 38px;border: none;" type="text" placeholder="出发地" value="" name="s" readonly="readonly" id="start">
+                                        </td>
+                                        <td style="width: 20px;">
+                                            <img src="img/arrow_passeger.png" style="height: 12px;">
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                            <div style="width: 100%;height: 40px;" id="vdest">
+                                <table style="width: 100%;100%;" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody><tr>
+                                        <td style="padding-left: 5px;">
+                                            <input type="text" style="width: 100%;height: 38px;border: none;" placeholder="目的地" value="" name="d" readonly="readonly" id="dest">
+                                        </td>
+                                        <td style="width: 20px;">
+                                            <img src="img/arrow_passeger.png" style="height: 12px;">
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </td>
+                        <td id="exchange" style="width: 60px;border: 1px solid #31A9E8;text-align: center;">
+                            <div>
+                                <img src="img/btnexc.png" style="width: 30px;">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody></table>
+                <div class="moshi">
+                    <div>当天</div>
+                    <div class="active2">白天</div>
+                    <div>夜车</div>
+                </div>
+                <a id="search">查坐车</a>
+            </li>
+            <li>
+                <div style="width: 100%;height: 41px;border: 1px solid #31A9E8;background: white;">
+                    <table style="width: 100%;100%;" border="0" cellspacing="0" cellpadding="0">
+                        <tbody><tr>
+                            <td style="padding-left: 5px;">
+                                <input type="text" style="width: 100%;height: 38px;border: none;" placeholder="请输入线路名称" name="stationname" id="c_station" readonly="readonly" value="">
+                            </td>
+                            <td style="width: 20px;">
+                                <img src="img/arrow_passeger.png" style="height: 12px;">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a id="search">查线路</a>
+            </li>
+            <li>
+                <div style="width: 100%;height: 41px;border: 1px solid #31A9E8;background: white;">
+                    <table style="width: 100%;100%;" border="0" cellspacing="0" cellpadding="0">
+                        <tbody><tr>
+                            <td style="padding-left: 5px;">
+                                <input type="text" style="width: 100%;height: 38px;border: none;" placeholder="请输入站点名称" name="stationname" readonly="readonly" value="">
+                            </td>
+                            <td style="width: 20px;">
+                                <img src="img/arrow_passeger.png" style="height: 12px;">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a id="search">公交站</a>
+            </li>
+        </ul>
+    </div>
+    <a href=""><img src="img/remd_zuocheapp.png" style="width: 100%;max-width: 320px;margin-bottom: 10px;"></a>
+    <div class="options">
+        <a href="#">首页</a>
+        |
+        <a href="">关于</a>
+        |
+        <a href="">分享</a>
+        |
+        <a href="">反馈</a>
+        |
+        <a href="#">客户端</a>
+    </div>
+    <div class="to_middle" style="width: 100%; height: 40px; line-height:40px; text-align: center;color: gray;">
+        &lt;&nbsp;触屏版|<a href="#" style="color: #31A9E8;">极速版</a>&gt;&nbsp;
+    </div>
+    <div class="foot">
+        ©2017 zuoche.com
+    </div>
+</div>
+</body>
+<script>
+    let li1=document.querySelectorAll('.title li');
+    let li2=document.querySelectorAll('.contain li');
+    for(let i=0;i<li1.length;i++){
+        li1[i].onclick=function(){
+            li1[i].index=i
+            for(let j=0;j<li1.length;j++){
+                li1[j].classList.remove('active');
+                li2[j].classList.remove('active1');
+            }
+            li1[i].classList.add('active');
+            li2[i].classList.add('active1');
+        }
+    }
+</script>
+</html>

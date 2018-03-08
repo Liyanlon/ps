@@ -1,0 +1,338 @@
+@import "base.css";
+/*头部开始*/
+header{
+    width: 100%;
+    height: 120px;
+}
+.head-box{
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-left{
+    width: 300px;
+    height: 42px;
+}
+.head-left span{
+    color: rgb(255, 192, 1);
+    font-family: 微软雅黑, "Microsoft YaHei";
+    font-size: 32px;
+    font-weight: bold;
+}
+.head-left span span{
+    color: rgb(204, 204, 204);
+}
+.head-right{
+    width: 601px;
+    height: 40px;
+}
+.head-right ul{
+    width: 100%;
+    height: 100%;
+}
+.head-right ul li{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.head-right ul li a{
+    color: #333;
+    font-size: 16px;
+}
+.head-right ul .active{
+    background-color: #ffc001;
+    border-radius: 20px;
+    color: #fff;
+}
+.head-right ul .active a{
+    color: #fff;
+}
+.head-right ul li:hover{
+    background-color: #ffc001;
+    border-radius: 20px;
+    color: #fff;
+}
+.head-right ul li:hover a{
+    color: #fff;
+}
+.head-right ul li:nth-of-type(5){
+    position: relative;
+}
+.hide{
+    position: absolute;
+    line-height: 31px;
+    top: 52px;
+    right: 0px;
+    padding: 0;
+    height: 65px;
+    width: 100px;
+    z-index: 16;
+    cursor: pointer;
+    background: #ffc001;
+    padding-top: 5px;
+    display: none;
+}
+.jt {
+    margin-top: -6px;
+    left: 45px;
+    top: -6px;
+    z-index: 2;
+    border-bottom-color: #ffc001!important;
+    border-color: #fff;
+    border-style: solid;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+}
+.hide-zi{
+    font-size: 14px;
+    text-align: center;
+    line-height: 31px;
+    color: #fff;
+}
+.hide .hide-zi a{
+    font-size: 14px;
+    text-align: center;
+    /*line-height: 31px;*/
+    color: #fff;
+}
+.hide .hide-zi:hover{
+    background: rgba(0,0,0,0.1);
+}
+.head-right ul li:nth-of-type(5):hover .hide{
+    display: block;
+}
+/*头部结束*/
+/*banner开始*/
+.banner{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background: url("../img/new-banner.jpg") no-repeat 50% 50%;
+}
+/*banner结束*/
+/*内容开始*/
+.new-container{
+    width: 100%;
+    height: 1228px;
+}
+.new-content{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.new-left-img{
+    position: absolute;
+    top: 57px;
+    left: 8px;
+    width: 382px;
+    height: 239px;
+}
+.new-img-box{
+    width: 340px;
+    position: relative;
+    overflow: hidden;
+    height: 225px;
+    margin:7px 24px;
+}
+.new-img-box a,.new-img-box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.new-left-tit{
+    position: absolute;
+    display: block;
+    z-index: 2;
+    height: 30px;
+    line-height: 30px;
+    width: 340px;
+    bottom: 7px;
+    left: 0;
+    margin-left: 24px;
+    background: #000000;
+    opacity: 0.7;
+}
+.new-left-tit span{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+.new-left-img-2{
+    position: absolute;
+    top: 321px;
+    left: 14px;
+    width: 370px;
+    height: 239px;
+}
+.new-left-img-3{
+    position: absolute;
+    top: 586px;
+    left: 8px;
+    width: 382px;
+    height: 239px;
+}
+.new-left-img-4{
+    position: absolute;
+    top: 849px;
+    left: 8px;
+    width: 419px;
+    height: 239px;
+}
+.new-right-text{
+    position: absolute;
+    top: 56px;
+    left: 477px;
+    width: 718px;
+    height: 1048px;
+}
+.new-text-one{
+    height: 88px;
+    text-align: justify;
+    padding: 3px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+.date{
+    text-align: left;
+    width: auto;
+    line-height: 28px;
+    vertical-align: top;
+    float: left;
+}
+.date a{
+    font-size: 18px;
+    color: #666;
+}
+.text{
+    width: 598px;
+    height: 88px;
+    display: inline-block;
+    float: left;
+}
+.circle{
+    position: relative;
+    display: inline-block;
+    margin: 5px 15px 0;
+    width: 18px;
+    height: 18px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    vertical-align: top;
+    z-index: 1;
+}
+.square{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #bababa;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    z-index: 2;
+}
+.text-box{
+    display: inline-block;
+    width: 533px;
+    height: 61px;
+}
+.text-top{
+    width: 100%;
+    height: 23px;
+    line-height: 23px;
+    text-align: left;
+}
+.text-top a{
+    font-size: 18px;
+   color: #666666;
+}
+.text-top a:hover{
+    color: #ffc001;
+}
+.text-box p{
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+    margin-bottom: 6px;
+    padding: 4px 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xian{
+    width: 1px;
+    position: absolute;
+    background: #dadada;
+    top: 0;
+    height: 1024px;
+    left: 127.969px;
+}
+/*内容结束*/
+/*footer开始*/
+footer{
+    width: 100%;
+    height: 89px;
+    background: #000;
+}
+.footer-box{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+footer .footer-box p{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #7f7f7f;
+    text-align: center;
+    margin-top: 25px;
+}
+footer .footer-box p:nth-of-type(2){
+    margin-top: 5px;
+}
+.footer-box p span{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #7f7f7f;
+    text-align: center;
+}
+.footer-box p span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+/*footer结束*/
+/*返回开始*/
+.toTop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    display: none;
+    opacity: 1;
+    background: url("../img/back.png") no-repeat 50% 50%;
+    background-size: cover;
+    transition: all 1s;
+    cursor: pointer;
+}
+.toTop:hover{
+    display: block;
+    opacity: 0.2;
+    background: url("../img/backhover.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+/*返回结束*/

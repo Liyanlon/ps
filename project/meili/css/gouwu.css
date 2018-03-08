@@ -1,0 +1,330 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-26 22:58:49
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-27 23:04:07
+*/
+@import url('base.css');
+body{
+	width: 100%;
+	height: 15rem;
+}
+.zhwei{
+	width: 100%;
+	height: 0.9rem;
+}
+
+.head{
+	width: 100%;
+	height: 0.9rem;
+	background: #fff;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	padding: 0 0.35rem 0;
+	border-bottom: 0.1rem solid #cecece;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+
+}
+
+.htext{
+	width: 1.56rem;
+	height: 0.36rem;
+	font-size: 0.35rem;
+	color: #404040;
+	margin-left: 2.7rem;
+}
+.xx{
+	display: block;
+	width: 0.57rem;
+	height: 0.30rem;
+	font-size: 0.28rem;
+	color: #a2a2a2;
+}
+.youxian{
+	width: 100%;
+	height: 5.09rem;
+	background: #fff;
+	border-bottom: 0.1rem solid #cecece;
+}
+.yxuan-top{
+	width: 100%;
+	height: 1.06rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.3rem 0;
+	border-bottom: 0.01rem solid #cecece;
+}
+.bt{
+	width: 1.79rem;
+	height: 0.36rem;
+	font-size: 0.28rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bt span{
+	color: #3f3f3f;
+}
+.bt img{
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+
+}
+.bt p{
+	color: #3f3f3f;
+}
+.jue{
+	display: block;
+	height: 0.23rem;
+	font-size: 0.23rem;
+	color: #3f3f3f;
+}
+.yxuan-cennter{
+	width: 100%;
+	height: 3.24rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ann{
+	
+	width:0.36rem;
+	height: 0.36rem;
+}
+.ann img{
+	display: block;
+	width:0.5rem;
+	height: 0.5rem;
+}
+.bifbx{
+    width:6.51rem;
+    height: 2.54rem;
+    display: flex;
+}
+.zlef{
+	width:1.70rem;
+	height: 2.54rem;
+}
+.zlef img{
+	display: block;
+	width: 1.7rem;
+	height: 2.54rem;
+}
+.rrigth{
+	width: 4.81rem;
+	height: 2.54rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 0.22rem;
+}
+.rrigth .wenzi{
+	font-size: 0.28rem;
+	color: #030303;
+}
+.lebie{
+	width: 2.4rem;
+	height: 0.21rem;
+	display: flex;
+	justify-content: space-between;
+}
+.lebie span{
+	font-size: 0.21rem;
+	color: #a5a5a5;
+}
+.jiaq{
+	width: 4.56rem;
+	height: 0.31rem;
+	display: flex;
+	justify-content: space-between;
+}
+.jiaq p,.jiaq span{
+	font-size: 0.23rem;
+	color: #303030;
+}
+.bott{
+	display: flex;
+	align-items: center;
+	font-size: 0.21rem;
+	color: #f60554;
+	margin-left: 0.74rem;
+}
+.caini{
+	width: 100%;
+	height: 6.73rem;
+	background: #fff;
+
+}
+.canni-top{
+	width: 100%;
+	height: 0.9rem;
+	display: flex;
+	align-items: center;
+	font-size: 0.28rem;
+	color: #131c1b;
+	padding-left: 0.2rem;
+}
+.caini-bottom{
+	width: 7.12rem;
+	height: 5.83rem;
+	margin: 0 auto;
+}
+.canni-list{
+	width: 7.12rem;
+	height: 5.83rem;
+	display: flex;
+	justify-content: space-between;
+}
+.canni-list li{
+    width: 3.45rem;
+    height: 5.83rem; 
+}
+.tu{
+    width:3.45rem;
+    height: 5.18rem;
+}
+.tu img{
+	display: block;
+	width:3.45rem;
+    height: 5.18rem;
+}
+.wen{
+	 width: 3.45rem;
+	 height:0.63rem;
+	font-size:0.22rem;
+	color: #6f6f6f;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.wen span{
+	width: 0.61rem;
+	height: 0.29rem;
+	font-size: 0.19rem;
+	color: #fff;
+	background: #ff649a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.jiesuan{
+	width: 100%;
+	height: 0.98rem;
+	background: #fff;
+	border-top: 0.01rem solid #ccc;
+	border-bottom: 0.01rem solid #ccc;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0.98rem;
+	left: 0;
+	z-index: 99;
+}
+.danwop{
+	width: 5.44rem;
+	height: 0.98rem;
+	background:#fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.30rem 0;
+}
+.sopp{
+	width: 1.06rem;
+	height: 0.36rem;
+	font-size: 0.26rem;
+	color: #353535;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.sopp img{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.sopp-right{
+	width: 2.32rem;
+	height: 0.56rem;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	align-items: flex-end;
+
+}
+.sopp-right p{
+	font-size: 0.23rem;
+	color: #f86093;
+}
+.sopp-right span{
+	font-size: 0.23rem;
+	color: #9b9b9b;
+}
+.btn{
+	width: 2.06rem;
+	height: 0.98rem;
+	background: #ff649a;
+	font-size: 0.36rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.jiewei{
+	width: 100%;
+	height: 0.98rem;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	display: flex;
+	border-top: 0.01rem solid #ccc;
+}
+.jiewei-list{
+	width: 100%;
+	height: 0.98rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.jiewei-list li{
+	width: 0.8rem;
+	height: 0.73rem;
+	background:#fff;
+}
+.jiewei-list li a{
+	display: flex;
+	width:0.43rem;
+	height: 0.41rem;
+	margin-left: 0.08rem;
+	justify-content: center;
+	padding-left: 0.2rem;
+	color: #404040;
+}
+.jiewei-list li:nth-child(3) a{
+	background: url('../img/fl (2).png');
+	background-size: 0.43rem 0.41rem;
+	    margin-left: 0.2rem;
+
+}
+.jiewei-list li a img{
+	display: block;
+	width: 0.43rem;
+	height: 0.41rem;
+}
+.jiewei-list p{
+	display: block;
+	font-size: 0.18rem;
+	text-align: center;
+	color: #606060;
+}

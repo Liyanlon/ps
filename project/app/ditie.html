@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/ditie.css">
+    <link rel="stylesheet" href="css/base.css">
+    <title>地铁线路图</title>
+</head>
+<body>
+<div class="top">
+    <span>地铁线路图</span>
+    <a href="index.html" class="backfont"><img class="back" src="img/btn_back.png"></a>
+    <div class="home"><span>更多</span>▼</div>
+    <ul class="diqu">
+        <li>北京</li>
+        <li>上海</li>
+        <li>广州</li>
+        <li>佛山</li>
+        <li>深圳</li>
+        <li>香港</li>
+        <li>南京</li>
+        <li>天津</li>
+        <li>武汉</li>
+        <li>成都</li>
+        <li>重庆</li>
+        <li>沈阳</li>
+        <li>大连</li>
+        <li>西安</li>
+        <li>长春</li>
+        <li>台北</li>
+    </ul>
+</div>
+<div class="tu">
+    <img src="img/metro_160a23ef1d500fe.png" alt="" style="width: 100%;height: 100%;">
+</div>
+<div class="foot">
+    <a href=""><span>查看大图</span></a>
+</div>
+</body>
+<script src="js/animate.js"></script>
+<script>
+    let home=document.querySelector(".home");
+    let city=document.querySelector(".diqu");
+    let aa=1;
+    home.onclick=function(){
+        aa++;
+        if(aa%2===0){
+            animate(city,{height:200},200)
+        }else{
+            animate(city,{height:0},200)
+
+        }
+    }
+</script>
+</html>

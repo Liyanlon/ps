@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/denglu.css">
+    <link rel="stylesheet" href="css/base.css">
+    <title>登录</title>
+</head>
+<body>
+<div class="top">
+    <span>登录</span>
+    <a href="my.html" class="backfont"><img class="back" src="img/btn_back.png"></a>
+</div>
+<ul class="zh">
+    <li>
+        <div class="tu"><img src="img/login_name.png" alt=""></div>
+        <input type="text" class="inp" placeholder="填写坐车网账号">
+    </li>
+    <li>
+        <div class="tu"><img src="img/login_key.png" alt=""></div>
+        <input type="text" class="inp" placeholder="填写密码">
+    </li>
+    <input type="submit" class="anniu" value="登录">
+    <div class="foot">
+        <div class="foot1">
+            <div class="xuan">√</div>
+            <span>记住登录</span>
+        </div>
+        <div class="foot2">
+            <a href="">登录遇到问题</a><br>
+            <a href="" class="zi">注册</a>
+        </div>
+    </div>
+</ul>
+</body>
+<script>
+    let xuan=document.querySelector(".xuan");
+    let i=1;
+    xuan.onclick=function(){
+        i++;
+        if(i%2===0){
+            xuan.innerHTML="";
+        }else{
+            xuan.innerHTML="√";
+        }
+    }
+</script>
+</html>

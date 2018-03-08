@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/huancheng.css">
+    <link rel="stylesheet" href="css/base.css">
+    <title>城际换乘</title>
+</head>
+<body>
+<div class="top">
+    <span>城际换乘</span>
+    <a href="index.html" class="backfont"><img class="back" src="img/btn_back.png"></a>
+</div>
+<div class="content">
+    <div class="contain">
+        <table style="width: 100%;height: 85px;margin: 0;padding: 0;" border="0" cellspacing="0" cellpadding="0" id="mPlacestb">
+            <tbody><tr>
+                <td style="border: 1px solid #31A9E8;border-right: none;background: white; ">
+                    <div style="width: 100%;height: 41px;border-bottom: 1px solid #31A9E8;" id="vstart">
+                        <table style="width: 100%;100%;" border="0" cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <td style="padding-left: 5px;">
+                                    <input style="width: 100%;height: 38px;border: none;" type="text" placeholder="太原 火车站" value="" name="s" readonly="readonly" id="start">
+                                </td>
+                                <td style="width: 20px;">
+                                    <img src="img/arrow_passeger.png" style="height: 12px;">
+                                </td>
+                            </tr>
+                            </tbody></table>
+                    </div>
+                    <div style="width: 100%;height: 40px;" id="vdest">
+                        <table style="width: 100%;100%;" border="0" cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <td style="padding-left: 5px;">
+                                    <input type="text" style="width: 100%;height: 38px;border: none;" placeholder="太原 机场" value="" name="d" readonly="readonly" id="dest">
+                                </td>
+                                <td style="width: 20px;">
+                                    <img src="img/arrow_passeger.png" style="height: 12px;">
+                                </td>
+                            </tr>
+                            </tbody></table>
+                    </div>
+                </td>
+                <td id="exchange" style="width: 60px;border: 1px solid #31A9E8;text-align: center;">
+                    <div>
+                        <img src="img/btnexc.png" style="width: 30px;">
+                    </div>
+                </td>
+            </tr>
+            </tbody></table>
+        <div class="moshi">
+            <div class="active2">综合</div>
+            <div>汽车</div>
+            <div>火车</div>
+            <div>飞机</div>
+        </div>
+        <a id="search">查坐车</a>
+        <a href="" style="display: block;width: 94%;margin: 0 auto;"><img src="img/remd_incity.jpg" style="width: 100%;height: 100%;"></a>
+    </div>
+    <div class="options">
+        <a href="#">首页</a>
+        |
+        <a href="">关于</a>
+        |
+        <a href="">分享</a>
+        |
+        <a href="">反馈</a>
+        |
+        <a href="#">客户端</a>
+    </div>
+    <div class="to_middle" style="width: 100%; height: 40px; line-height:40px; text-align: center;color: gray;">
+        &lt;&nbsp;触屏版|<a href="#" style="color: #31A9E8;">极速版</a>&gt;&nbsp;
+    </div>
+    <div class="foot">
+        ©2017 zuoche.com
+    </div>
+</div>
+</body>
+<script>
+    let mo=document.querySelectorAll(".moshi div");
+    mo.forEach(function (val,index) {
+        val.onclick=function () {
+            mo.forEach(function(a,b){
+                a.classList="";
+            })
+            val.classList="active2";
+        }
+    })
+</script>
+</html>

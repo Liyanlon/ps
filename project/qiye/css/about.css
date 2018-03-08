@@ -1,0 +1,502 @@
+@import "base.css";
+/*头部开始*/
+header{
+    width: 100%;
+    height: 120px;
+}
+.head-box{
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-left{
+    width: 300px;
+    height: 42px;
+}
+.head-left span{
+    color: rgb(255, 192, 1);
+    font-family: 微软雅黑, "Microsoft YaHei";
+    font-size: 32px;
+    font-weight: bold;
+}
+.head-left span span{
+    color: rgb(204, 204, 204);
+}
+.head-right{
+    width: 601px;
+    height: 40px;
+}
+.head-right ul{
+    width: 100%;
+    height: 100%;
+}
+.head-right ul li{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.head-right ul li a{
+    color: #333;
+    font-size: 16px;
+}
+.head-right ul .active{
+    background-color: #ffc001;
+    border-radius: 20px;
+    color: #fff;
+}
+.head-right ul .active a{
+    color: #fff;
+}
+.head-right ul li:hover{
+    background-color: #ffc001;
+    border-radius: 20px;
+    color: #fff;
+}
+.head-right ul li:hover a{
+    color: #fff;
+}
+.head-right ul li:nth-of-type(5){
+    position: relative;
+}
+.hide{
+    position: absolute;
+    line-height: 31px;
+    top: 52px;
+    right: 0px;
+    padding: 0;
+    height: 65px;
+    width: 100px;
+    z-index: 16;
+    cursor: pointer;
+    background: #ffc001;
+    padding-top: 5px;
+    display: none;
+}
+.jt {
+    margin-top: -6px;
+    left: 45px;
+    top: -6px;
+    z-index: 2;
+    border-bottom-color: #ffc001!important;
+    border-color: #fff;
+    border-style: solid;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+}
+.hide-zi{
+    font-size: 14px;
+    text-align: center;
+    line-height: 31px;
+    color: #fff;
+}
+.hide .hide-zi a{
+    font-size: 14px;
+    text-align: center;
+    /*line-height: 31px;*/
+    color: #fff;
+}
+.hide .hide-zi:hover{
+    background: rgba(0,0,0,0.1);
+}
+.head-right ul li:nth-of-type(5):hover .hide{
+    display: block;
+}
+/*头部结束*/
+/*banner开始*/
+.banner{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background: url("../img/about-banner.jpg") no-repeat 50% 50%;
+}
+/*banner结束*/
+/*装修风格开始*/
+.style-container{
+    width: 100%;
+    height: 1230px;
+}
+.style-content{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.style-title{
+    position: absolute;
+    top: 95px;
+    left: 416px;
+    width: 300px;
+    height: 66px;
+}
+.style-title span{
+    display: block;
+    text-align: center;
+    font-size: 29px;
+    color: rgb(102, 102, 102);
+    line-height: 32px;
+}
+.style-title span:nth-of-type(2){
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+}
+.style-icon{
+    position: absolute;
+    top: 172px;
+    left: 481px;
+    width: 166px;
+    height: 12px;
+}
+.style-icon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.style-img{
+    position: absolute;
+    top: 268px;
+    left: 92px;
+    width: 114px;
+    height: 114px;
+}
+.style-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.style-text{
+    position: absolute;
+    top: 410px;
+    left: 15px;
+    width: 259px;
+    height: 96px;
+}
+.style-text span{
+    display: block;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+.style-text p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(153, 153, 153);
+}
+.style-img-2{
+    position: absolute;
+    top: 259px;
+    left: 377px;
+    width: 114px;
+    height: 114px;
+}
+.style-text-2{
+    position: absolute;
+    top: 409px;
+    left: 305px;
+    width: 259px;
+    height: 99px;
+}
+.style-img-3{
+    position: absolute;
+    top: 257px;
+    left: 659px;
+    width: 114px;
+    height: 114px;
+}
+.style-text-3{
+    position: absolute;
+    top: 410px;
+    left: 595px;
+    width: 259px;
+    height: 99px;
+}
+.style-img-4{
+    position: absolute;
+    top: 263px;
+    left: 963px;
+    width: 114px;
+    height: 114px;
+}
+.style-text-4{
+    position: absolute;
+    top: 414px;
+    left: 895px;
+    width: 259px;
+    height: 99px;
+}
+/*装修风格结束*/
+/*公司介绍开始*/
+.js-left-img{
+    position: absolute;
+    top: 650px;
+    left: 35px;
+    width: 650px;
+    height: 480px;
+}
+.js-left-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.js-right-text{
+    position: absolute;
+    top: 690px;
+    left: 713px;
+    width: 451px;
+    height: 327px;
+}
+.js-right-text p{
+    font-size: 34px;
+    line-height: 38px;
+    color: #000;
+    font-weight: 600;
+}
+.js-right-text p:nth-of-type(2){
+    margin-top: 40px;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    font-family: 微软雅黑;
+    line-height: 35px;
+    font-weight: normal;
+}
+/*公司介绍结束*/
+/*公司理念开始*/
+.ln-container{
+    width: 100%;
+    height: 592px;
+    background: url("../img/ln.jpg");
+    background-size:100%;
+}
+.ln-content{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.ln-top{
+    position: absolute;
+    top: 110px;
+    left: 306px;
+    width: 616px;
+    height: 213px;
+}
+.ln-top p{
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.ln-top p:nth-of-type(2){
+    font-size: 22px;
+    color: #fff;
+    line-height: 52px;
+    text-align: center;
+    margin-top: 55px;
+    font-weight: normal;
+}
+.ln-top p:nth-of-type(3){
+    font-size: 22px;
+    color: #fff;
+    line-height: 52px;
+    text-align: center;
+    font-weight: normal;
+}
+.ln-bottom{
+    position: absolute;
+    top: 372px;
+    left: 506px;
+    width: 208px;
+    border: 10px solid transparent;
+    margin-top: -10px;
+    margin-left: -10px;
+    height: 56px;
+}
+.ln-bottom a{
+    display: block;
+    width: 208px;
+    height: 56px;
+    color: #212121;
+    text-align: center;
+    line-height: 56px;
+    background: #fff;
+    font-size: 18px;
+}
+/*公司理念结束*/
+/*联系方式开始*/
+.contact-container{
+    width: 100%;
+    height: 620px;
+}
+.contact-content{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.contact-td:nth-of-type(1){
+    margin-top: 80px;
+}
+.contact-td{
+    width: 1064px;
+    height: 64px;
+    margin-bottom: 5px;
+}
+.contact-td-left{
+    float: left;
+    width: 20%;
+    height: 36px;
+    text-align: right;
+    line-height: 36px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+}
+.contact-td input{
+    width: 725px;
+    float: left;
+    margin-left: 2%;
+    border: 1px solid #dadada;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    line-height: 36px;
+    height: 36px;
+    border-radius: 2px;
+    text-indent: 6px;
+    color: #8C8C8C;
+    float: left;
+}
+.xing{
+    font-family: 微软雅黑;
+    width: 1%;
+    float: left;
+    vertical-align: middle;
+    font-size: 14px;
+    color: red;
+    margin-left: 2.5%;
+    line-height: 40px;
+    height: 40px;
+}
+.contact-td:nth-of-type(3) input{
+    width: 13px;
+    height: 15px;
+    line-height: 15px;
+    vertical-align: middle;
+    border: 1px solid rgba(218,218,218,0.29);
+    color: #9b9b9b;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+label{
+    font-size: 13px;
+    line-height: 35px;
+    margin-left: 5px;
+    color: rgb(102, 102, 102);
+    float: left;
+}
+.contact-td:nth-of-type(7) input{
+    width: 131px;
+    height: 36px;
+}
+.ma{
+    height: 35px;
+    margin-left: 10px;
+    float: left;
+    line-height: 35px;
+}
+.ma img{
+    width: 68px;
+    height: 24px;
+    vertical-align: middle;
+}
+.ma span{
+    margin-left: 10px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    line-height: 35px;
+    cursor: pointer;
+}
+.button{
+    width: 1064px;
+    height: 82px;
+    margin-left: 234px;
+}
+.button a{
+    display: block;
+    width: 241px;
+    height: 44px;
+    background: #ffad2b;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+}
+/*联系方式结束*/
+/*footer开始*/
+footer{
+    width: 100%;
+    height: 89px;
+    background: #000;
+}
+.footer-box{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+footer .footer-box p{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #7f7f7f;
+    text-align: center;
+    margin-top: 25px;
+}
+footer .footer-box p:nth-of-type(2){
+    margin-top: 5px;
+}
+.footer-box p span{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #7f7f7f;
+    text-align: center;
+}
+.footer-box p span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+/*footer结束*/
+/*返回开始*/
+.toTop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    display: none;
+    opacity: 1;
+    background: url("../img/back.png") no-repeat 50% 50%;
+    background-size: cover;
+    transition: all 1s;
+    cursor: pointer;
+}
+.toTop:hover{
+    display: block;
+    opacity: 0.2;
+    background: url("../img/backhover.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+/*返回结束*/

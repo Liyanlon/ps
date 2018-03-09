@@ -19,7 +19,7 @@ a {
     position: fixed;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.61);
+    background: rgba(0, 0, 0, 0.51);
     z-index: 9999;
 }
 
@@ -33,6 +33,7 @@ a {
 
 #head li {
     width: 100px;
+    border-radius: 10px;
     font-size: 18px;
     line-height: 50px;
     text-align: center;
@@ -61,13 +62,13 @@ a {
 }
 
 .two-left .img {
-    width: 400px;
+    width: auto;
     height: 580px;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 100px;
+    right: 70px;
 }
 
 .two-right {
@@ -97,8 +98,22 @@ a {
     /*display: none;*/
 
 }
+.gerenjieshao1 {
+    width: 500px;
+    height: 580px;
+    border: 1px solid #fff;
+    float: left;
+    background: rgba(0, 0, 0, 0.54);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 60px;
+    z-index: 2;
+    /*display: none;*/
 
-.gerenjieshao p {
+}
+.gerenjieshao p,.gerenjieshao1 p {
     padding: 0 20px;
     font-size: 16px;
     color: #fff;
@@ -106,7 +121,7 @@ a {
 
 }
 
-.gerenjieshao .p1 {
+.gerenjieshao .p1,.gerenjieshao1 .p1 {
     padding: 20px 0;
     font-size: 44px;
     color: #fff;
@@ -114,7 +129,7 @@ a {
     text-align: center;
 }
 
-.gerenjieshao .p2 {
+.gerenjieshao .p2,.gerenjieshao1 .p2 {
     padding: 0 20px;
     font-size: 16px;
     color: #fff;
@@ -162,7 +177,7 @@ a {
     position: absolute;
     top: 60%;
     left: calc(50% - 1px);
-    font-size: 50px;
+    font-size: 40px;
     overflow: hidden;
     font-family: Tahoma, Geneva, sans-serif;
     text-align: center;

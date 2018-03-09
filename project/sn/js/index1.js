@@ -317,21 +317,21 @@
 // 侧导航
 let fiexd = $(".fixed ul li.si");
 fiexd.mouseenter(function () {
-    $(this).addClass("active");
+    $(this).addClass("active").stop(true);
     $(this).children().children(".block").animate({left:-47},500);
-});
+}).stop(true,true);
 fiexd.mouseleave(function () {
-    $(this).removeClass("active");
-    $(this).children().children(".block").animate({left:0},500);
+    $(this).removeClass("active").stop(true);
+    $(this).children().children(".block").stop(true,true).animate({left:0},500);
 });
 let three = $(".fixed ul li.san");
 three.mouseenter(function () {
-    $(this).addClass("active");
+    $(this).addClass("active").stop(true);
     $(this).children().children(".block1").animate({left:-75},500);
-});
+}).stop(true,true);
 three.mouseleave(function () {
-    $(this).removeClass("active");
-    $(this).children().children(".block1").animate({left:0},500);
+    $(this).removeClass("active").stop(true);
+    $(this).children().children(".block1").stop(true,true).animate({left:0},500);
 });
 
 

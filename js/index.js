@@ -8,7 +8,7 @@ $("#container").fullpage({
     navigationTooltips: ["111", "222", "333", "444"],
     continuousVertical: true,
     fixedElements:"#menu",
-    menu:"#menu",
+    menu:"#head",
     afterLoad:function(anchor,index){
         if(index ===1){
             $(".text-box").css("transform","translateX(0)");
@@ -120,4 +120,12 @@ $(".four-list").mouseleave(function () {
         mask.animate({left: 0, top:270}, 200)
     }
 
+})
+
+let a=$("#head li");
+let b=$("section");
+let index=$(this).index();
+a.click(function(){
+    console.log(1);
+    a.removeClass("active").filter(this).addClass("active");
 })
